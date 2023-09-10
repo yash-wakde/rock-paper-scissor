@@ -56,3 +56,5 @@ function playRound(){
         playerScore.innerText = parseInt(playerScore.innerText)+1
         return playerWin}
 }
+
+
