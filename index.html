@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor!</title>
-    <script src="javascript.js"></script>
+    <title>Rock Paper Scissors!</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+    <div class="game">
+        <p class="gameText" id="playerText">YOU</p>
+        <div class="selections">
+            <button class="selection">✊</button>
+            <button class="selection">✋</button>
+            <button class="selection">✌️</button>
+        </div>
+        <p class="gameText" id="computerText">COMPUTER</p>
+        <p class="gameText" id="resultText">RESULT</p>
+    </div>
 </body>
 </html>
