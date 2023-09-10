@@ -56,9 +56,9 @@ function playRound(playerChoice, computerChoice) {
 
 function announceWinner() {
     if (player === maxScore) {
-        resultText.textContent = "You are the overall winner!";
+        resultText.textContent = "You have won the game!";
     } else {
-        resultText.textContent = "Computer is the overall winner!";
+        resultText.textContent = "Computer has won the game!";
     }
 
     selectionButtons.forEach(selection => {

@@ -1,10 +1,18 @@
-/* body{
+body{
     background-color:#ccc;
 }
 
+.heading{
+    color: firebrick;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
 .selections{
     display:flex;
     justify-content: center;
+    gap: 40px;
+    
 }
 
 .selection{
@@ -14,8 +22,37 @@
     cursor: pointer;
     font-size: 6rem;
     transition: 100ms;
+    font-size: 200px;
 }
 
 .selection:hover{
     transform : scale(1.2);
-} */
+}
+
+.playerText{
+    text-align: center;
+    font-size: 36px;
+    color: teal;
+}
+
+.computerText{
+    text-align: center;
+    font-size: 36px;
+    color:teal;
+}
+
+.resultText{
+    text-align: center;
+    font-size: 40px;
+    color:royalblue;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 32px;
+}
+
+.results{
+    text-align: center;
+}
