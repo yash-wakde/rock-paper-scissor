@@ -3,9 +3,12 @@ const computerText = document.querySelector('#computerText')
 const resultText = document.querySelector('#resultText')
 const selections = document.querySelectorAll('.selections')
 
-let player;
-let computer;
-let result;
+let player
+let computer
+let result
+let playerWin = "You Win!"
+let playerLose = "You Lose!"
+let gameTie = "It's a Tie!"
 
 selections.forEach(button)(button => addEventListener('click', () => {
     player = button.textContent
@@ -22,30 +25,24 @@ function getComputerChoice(){
 }
 
 function playRound(){
-    if (playerSelection == "rock" && computerSelection == "paper"){
-        return playerLose;}
-    
-    else if (playerSelection == "rock" && computerSelection == "scissors"){
-        return  playerWin;}
-    
-    else if (playerSelection == "rock" && computerSelection == "rock"){
-        return gameTie;}
-    
-    else if (playerSelection == "paper" && computerSelection == "scissors"){
-        return playerLose;}
+    if (player ==  computer){
+        return gameTie}
 
-    else if (playerSelection == "paper" && computerSelection == "rock"){
-        return playerWin;}
-
-    else if (playerSelection == "paper" && computerSelection == "paper"){
-        return gameTie;}
+    else if (player == "✊" && computer == "✋"){
+        return playerLose}
     
-    else if (playerSelection == "scissors" && computerSelection == "rock")
-        return playerLose;}
+    else if (player == "✊" && computer == "✌️"){
+        return  playerWin}
+    
+    else if (player == "✋" && computer == "✌️"){
+        return playerLose}
 
-    else if (playerSelection == "scissors" && computerSelection == "paper"){
-        return playerWin;}
+    else if (player == "✋" && computer == "✊"){
+        return playerWin}
+    
+    else if (player == "✌️" && computer == "✊"){
+        return playerLose}
 
-    else if (playerSelection == "scissors" && computerSelection == "scissors"){
-        return gameTie;}
+    else if (player == "✌️" && computer == "✋"){
+        return playerWin}
 }
