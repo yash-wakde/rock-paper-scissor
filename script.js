@@ -1,7 +1,9 @@
-const playerText = document.querySelector('#playerText')
-const computerText = document.querySelector('#computerText')
-const resultText = document.querySelector('#resultText')
+const playerText = document.querySelector('.playerText')
+const computerText = document.querySelector('.computerText')
+const resultText = document.querySelector('.resultText')
 const selectionButtons = document.querySelectorAll('[data-selection]')
+const playerScore = document.querySelector('.player-score')
+const computerScore = document.querySelector('.computer-score')
 
 let player
 let computer
@@ -31,20 +33,26 @@ function playRound(){
         return gameTie}
 
     else if (player == "✊" && computer == "✋"){
+        computerScore.innerText = parseInt(computerScore.innerText)+1
         return playerLose}
     
     else if (player == "✊" && computer == "✌️"){
+        playerScore.innerText = parseInt(playerScore.innerText)+1
         return  playerWin}
     
     else if (player == "✋" && computer == "✌️"){
+        computerScore.innerText = parseInt(computerScore.innerText)+1
         return playerLose}
 
     else if (player == "✋" && computer == "✊"){
+        playerScore.innerText = parseInt(playerScore.innerText)+1
         return playerWin}
     
     else if (player == "✌️" && computer == "✊"){
+        computerScore.innerText = parseInt(computerScore.innerText)+1
         return playerLose}
 
     else if (player == "✌️" && computer == "✋"){
+        playerScore.innerText = parseInt(playerScore.innerText)+1
         return playerWin}
 }
