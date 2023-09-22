@@ -4,6 +4,7 @@ const resultText = document.querySelector('.resultText');
 const selectionButtons = document.querySelectorAll('[data-selection]');
 const playerScore = document.querySelector('.player-score');
 const computerScore = document.querySelector('.computer-score');
+const playAgainButton = document.querySelector('.play-again');
 
 let player = 0;
 let computer = 0;
@@ -25,6 +26,7 @@ selectionButtons.forEach(selection => {
 
             if (player === maxScore || computer === maxScore) {
                 announceWinner();
+                playAgainButton.style.display = 'block';
             }
         }
     });
@@ -66,3 +68,19 @@ function announceWinner() {
         selection.disabled = true;
     });
 }
+
+playAgainButton.addEventListener('click', () => {
+    player = 0;
+    computer = 0;
+    playerScore.innerText = '0';
+    computerScore.innerText = '0';
+    resultText.textContent = '';
+    playerText.textContent = 'You';
+    computerText.textContent = 'Computer';
+    
+    selectionButtons.forEach(selection => {
+        selection.disabled = false;
+    });
+
+    playAgainButton.style.display = 'none';
+});
