@@ -19,8 +19,8 @@ selectionButtons.forEach(selection => {
         if (player < maxScore && computer < maxScore) {
             const playerChoice = selection.textContent;
             const computerChoice = getComputerChoice();
-            playerText.textContent = `You : ${playerChoice}`;
-            computerText.textContent = `Computer : ${computerChoice}`;
+            playerText.textContent = `${playerChoice}`;
+            computerText.textContent = `${computerChoice}`;
             const roundResult = playRound(playerChoice, computerChoice);
             resultText.textContent = roundResult;
 
@@ -74,9 +74,9 @@ playAgainButton.addEventListener('click', () => {
     computer = 0;
     playerScore.innerText = '0';
     computerScore.innerText = '0';
-    resultText.textContent = '';
-    playerText.textContent = 'You';
-    computerText.textContent = 'Computer';
+    resultText.textContent = 'First to 5 wins!';
+    playerText.textContent = '❔';
+    computerText.textContent = '❔';
     
     selectionButtons.forEach(selection => {
         selection.disabled = false;

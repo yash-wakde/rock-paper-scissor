@@ -1,13 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
-    background-color:#ccc;
+    background-color:#222831;
 }
 
 .heading{
-    color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111720;
+    color: #fac650;
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+    height: 90px;
 }
+
+.resultText{
+    color: #ddd;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+    margin-top: 2rem;
+}
+
+.action-player{
+    width: 170px;
+    height: 170px;
+}
+
+.playerText{
+    text-align: center;
+    font-size: 4rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+.action-computer{
+    width: 170px;
+    height: 170px;
+}
+
+.computerText{
+    text-align: center;
+    font-size: 4rem;
+    color: #ddd;
+   margin-bottom: 2rem;
+}   
+
+.results{
+    font-size: 28px;
+    text-align: center;
+    color: #ddd;
+}
+
 .selections{
     display:flex;
     justify-content: center;
@@ -23,39 +78,14 @@ body{
     font-size: 6rem;
     transition: 100ms;
     font-size: 100px;
+    margin-top: 4rem;
 }
 
 .selection:hover{
     transform : scale(1.2);
 }
 
-.playerText{
-    text-align: center;
-    font-size: 36px;
-    color: teal;
-}
 
-.computerText{
-    text-align: center;
-    font-size: 36px;
-    color:teal;
-}
-
-.resultText{
-    text-align: center;
-    font-size: 40px;
-    color:royalblue;
-}
-
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 32px;
-}
-
-.results{
-    text-align: center;
-}
 
 .play-again {
     display: block;

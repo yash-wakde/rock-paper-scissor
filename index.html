@@ -10,20 +10,23 @@
 <body>
     <div class="game">
         <div class="heading">Rock, Paper & Scissors!</div>
-        <p class="playerText">You</p>
+        <p class="resultText">First to 5 wins!</p>
+        <div class="action">
+            <div class="action-player">
+                <p class="playerText">❔</p>
+                <div class="results">Player<br><br><span class="player-score">0</span></div>
+            </div>
+            <div class="action-computer">
+                <p class="computerText">❔</p>
+                <div class="results">Computer<br><br><span class="computer-score">0</span></div>
+            </div>
+        </div>
         <div class="selections">
             <button class="selection" data-selection="rock">✊</button>
             <button class="selection" data-selection="paper">✋</button>
             <button class="selection" data-selection="scissors">✌️</button>
         </div>
-        <p class="computerText">Computer</p>
-        <p class="resultText"></p>
-
-        <div class="container">
-            <div class="results">Your Score<br><span class="player-score">0</span></div>
-            <div class="results">Computer Score<br><span class="computer-score">0</span></div>
-        </div>
+        <button class="play-again" style="display: none;">Play Again</button>
     </div>
-    <button class="play-again" style="display: none;">Play Again</button>
 </body>
 </html>
