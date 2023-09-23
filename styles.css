@@ -4,14 +4,14 @@
 }
 
 body{
-    background-color:#222831;
+    background-color:#D9BF77;
 }
 
 .heading{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #111720;
+    background-color: #4E4A36;
     color: #fac650;
     font-size: 48px;
     font-weight: bold;
@@ -20,7 +20,7 @@ body{
 }
 
 .resultText{
-    color: #ddd;
+    color: #333;
     font-size: 36px;
     text-align: center;
     margin-top: 2rem;
@@ -41,7 +41,7 @@ body{
 .playerText{
     text-align: center;
     font-size: 4rem;
-    color: #ddd;
+    color: #333;
     margin-bottom: 2rem;
 }
 
@@ -53,14 +53,14 @@ body{
 .computerText{
     text-align: center;
     font-size: 4rem;
-    color: #ddd;
+    color: #333;
    margin-bottom: 2rem;
 }   
 
 .results{
     font-size: 28px;
     text-align: center;
-    color: #ddd;
+    color: #333;
 }
 
 .selections{
@@ -91,8 +91,8 @@ body{
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #333; 
-    color: #fff;
+    background-color: #4E4A36; 
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
